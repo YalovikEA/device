@@ -731,17 +731,14 @@ input[type="radio"].visually-hidden {
   justify-content: space-between;
 }
 
-.partners__item {
-
-}
-
 .partners__img {
   filter: grayscale(1);
   opacity: .2;
   transition: 0.5s;
 }
 
-.partners__link:hover .partners__img {
+.partners__link:hover .partners__img,
+.partners__link:focus .partners__img {
   filter: grayscale(0);
   opacity: 1;
 }
