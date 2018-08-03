@@ -148,6 +148,10 @@ input[type="radio"].visually-hidden {
 
 /* HEADER */
 
+.inner-page .main-header__wrapper {
+  margin-bottom: 35px;
+}
+
 .main-header {
   display: flex;
   flex-direction: column;
@@ -751,6 +755,11 @@ input[type="radio"].visually-hidden {
   margin-bottom: 80px;
 }
 
+.inner-page .main-content__block {
+  flex-direction: column;
+  margin-bottom: 65px;
+}
+
 .about {
   width: 500px;
 }
@@ -975,4 +984,24 @@ input[type="radio"].visually-hidden {
 
 .developed__link:active .developed__link-img path {
   opacity: 0.3;
+}
+
+
+
+/* INNER-PAGE */
+
+.page-title {
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0 60px;
+}
+
+/* BREADCRUMBS */
+
+.breadcrumbs {
+  padding: 0 60px;
+}
+
+.breadcrumbs__list {
+  display: flex;
 }
