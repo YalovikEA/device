@@ -179,10 +179,11 @@
 
         <div class="filter__content">
           <form action="" method="POST" class="filter__form filter-form">
-            <fieldset class="filter-form__block">
+            <fieldset class="filter-form__block filter-form__block--price">
               <legend class="filter-form__block-title">Стоимость</legend>
 
               <div class="filter-form__range">
+                <div class="filter-form__scale"></div>
                 <div class="filter-form__toggle filter-form__toggle--from"></div>
                 <div class="filter-form__toggle filter-form__toggle--to"></div>
               </div>
@@ -195,71 +196,57 @@
               </p>
             </fieldset>
 
-            <fieldset class="filter-form__block">
+            <fieldset class="filter-form__block filter-form__block--color">
               <legend class="filter-form__block-title">Цвет</legend>
 
               <p class="filter-form__field">
-                <label for="color-black" class="filter-form__field-title">
-                  <span class="filter-form__custom-checkbox"></span>
-                  Черный
-                </label>
-                <input type="checkbox" name="color-black" id="color-black" class="filter-form__field-checkbox" checked>
+                <input type="checkbox" name="color-black" id="color-black" class="filter-form__field-checkbox visually-hidden" checked>
+                <label for="color-black" class="filter-form__field-title">Черный</label>
               </p>
 
               <p class="filter-form__field">
-                <label for="color-white" class="filter-form__field-title">
-                  <span class="filter-form__custom-checkbox"></span>
-                  Белый
-                </label>
-                <input type="checkbox" name="color-white" id="color-white" class="filter-form__field-checkbox">
+                <input type="checkbox" name="color-white" id="color-white" class="filter-form__field-checkbox visually-hidden">
+                <label for="color-white" class="filter-form__field-title">Белый</label>
               </p>
 
               <p class="filter-form__field">
-                <label for="color-blue" class="filter-form__field-title">
-                  <span class="filter-form__custom-checkbox"></span>
-                  Синий
+                <input type="checkbox" name="color-blue" id="color-blue" class="filter-form__field-checkbox visually-hidden" checked>
+                <label for="color-blue" class="filter-form__field-title">Синий
                 </label>
-                <input type="checkbox" name="color-blue" id="color-blue" class="filter-form__field-checkbox" checked>
               </p>
 
               <p class="filter-form__field">
-                <label for="color-red" class="filter-form__field-title">
-                  <span class="filter-form__custom-checkbox"></span>
-                  Красный
-                </label>
-                <input type="checkbox" name="color-red" id="color-red" class="filter-form__field-checkbox" checked>
+                <input type="checkbox" name="color-red" id="color-red" class="filter-form__field-checkbox visually-hidden" checked>
+                <label for="color-red" class="filter-form__field-title">Красный</label>
               </p>
 
               <p class="filter-form__field">
-                <label for="color-pink" class="filter-form__field-title">
-                  <span class="filter-form__custom-checkbox"></span>
-                  Розовый
-                </label>
-                <input type="checkbox" name="color-pink" id="color-pink" class="filter-form__field-checkbox">
+                <input type="checkbox" name="color-pink" id="color-pink" class="filter-form__field-checkbox visually-hidden">
+                <label for="color-pink" class="filter-form__field-title">Розовый</label>
               </p>
             </fieldset>
 
-            <fieldset class="filter-form__block">
+            <fieldset class="filter-form__block filter-form__block--bluetooth">
               <legend class="filter-form__block-title">Bluetooth</legend>
 
               <p class="filter-form__field">
+                <input type="radio" name="bluetooth" value="yes" id="bluetooth-yes" class="filter-form__field-radio visually-hidden" checked>
                 <label for="bluetooth-yes" class="filter-form__field-title">
                   <span class="filter-form__custom-radio"></span>
                   Есть
                 </label>
-                <input type="radio" name="bluetooth" value="yes" id="bluetooth-yes" class="filter-form__field-radio">
               </p>
 
               <p class="filter-form__field">
+                <input type="radio" name="bluetooth" value="no" id="bluetooth-no" class="filter-form__field-radio visually-hidden">
                 <label for="bluetooth-no" class="filter-form__field-title">
                   <span class="filter-form__custom-radio"></span>
                   Нет
                 </label>
-                <input type="radio" name="bluetooth" value="no" id="bluetooth-no" class="filter-form__field-radio">
               </p>
             </fieldset>
 
-            <button type="submit" class="filter-form__submit">Показать</button>
+            <button type="submit" class="filter-form__submit btn">Показать</button>
           </form>
         </div>
       </section>
@@ -269,7 +256,7 @@
           <h3 class="sort__title">Сортировка:</h3>
 
           <ul class="sort__parameters sort-parameters__list">
-            <li class="sort-parameters__item">
+            <li class="sort-parameters__item sort-parameters__item--active">
               <a href="#" class="sort-parameters__link">По цене</a>
             </li>
             <li class="sort-parameters__item">
@@ -282,10 +269,10 @@
 
           <ul class="sort__rank sort-rank__list">
             <li class="sort-rank__item">
-              <a href="#" class="sort-rank__link">По возрастанию</a>
+              <a href="#" class="sort-rank__link sort-rank__link--up">По возрастанию</a>
             </li>
-            <li class="sort-rank__item">
-              <a href="#" class="sort-rank__link">По убыванию</a>
+            <li class="sort-rank__item sort-rank__item--active">
+              <a href="#" class="sort-rank__link sort-rank__link--down">По убыванию</a>
             </li>
           </ul>
         </header>
@@ -369,7 +356,7 @@
         <div class="product__pagination pagination">
           <a href="#" class="pagination__link pagination__link--prev">Назад</a>
           <ul class="pagination__list">
-            <li class="pagination__item">
+            <li class="pagination__item pagination__item--active">
               <a href="#" class="pagination__link">1</a>
             </li>
             <li class="pagination__item">
