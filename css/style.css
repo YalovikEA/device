@@ -1556,3 +1556,106 @@ input[type="radio"].visually-hidden {
 .pagination__list .pagination__link:last-child {
   margin-right: 0;
 }
+
+/* MODALS */
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 960px;
+  padding: 90px 100px;
+  background-color: #ffffff;
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2); 
+}
+
+.modal__close {
+  position: absolute;
+  top: 22px;
+  right: 22px;
+  width: 55px;
+  height: 55px;
+  font-size: 0;
+  background-color: #f7e296;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+
+.modal__close::before,
+.modal__close::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 30px;
+  height: 2px;
+  background-color: #ffffff;
+}
+
+.modal__close::before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.modal__close::after {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.modal-show {
+  display: block;
+}
+
+.write-form {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.write-form__field {
+  margin: 0;
+  margin-bottom: 35px;
+  width: 360px;
+}
+
+.write-form__field--text {
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.write-form__field-title {
+  display: block;
+  margin-bottom: 10px;
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 800;
+  color: #000000
+}
+
+.write-form__field-input,
+.write-form__text {
+  width: 100%;
+  padding: 18px 20px;
+  background-color: #f2f2f2;
+  border: none;
+}
+
+.write-form__field-input,
+.write-form__text,
+.write-form__field-input::placeholder,
+.write-form__text::placeholder {
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(70, 70, 70, 0.4);
+}
+
+.write-form__text {
+  min-height: 155px;
+}
+
+.write-form__submit {
+  width: 200px;
+}
