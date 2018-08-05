@@ -201,28 +201,42 @@
 
               <p class="filter-form__field">
                 <input type="checkbox" name="color-black" id="color-black" class="filter-form__field-checkbox visually-hidden" checked>
-                <label for="color-black" class="filter-form__field-title">Черный</label>
+                <label for="color-black" class="filter-form__field-title">
+                  <span class="filter-form__custom-checkbox"></span>
+                  Черный
+                </label>
               </p>
 
               <p class="filter-form__field">
                 <input type="checkbox" name="color-white" id="color-white" class="filter-form__field-checkbox visually-hidden">
-                <label for="color-white" class="filter-form__field-title">Белый</label>
+                <label for="color-white" class="filter-form__field-title">
+                  <span class="filter-form__custom-checkbox"></span>
+                  Белый
+                </label>
               </p>
 
               <p class="filter-form__field">
                 <input type="checkbox" name="color-blue" id="color-blue" class="filter-form__field-checkbox visually-hidden" checked>
-                <label for="color-blue" class="filter-form__field-title">Синий
+                <label for="color-blue" class="filter-form__field-title">
+                  <span class="filter-form__custom-checkbox"></span>
+                  Синий
                 </label>
               </p>
 
               <p class="filter-form__field">
                 <input type="checkbox" name="color-red" id="color-red" class="filter-form__field-checkbox visually-hidden" checked>
-                <label for="color-red" class="filter-form__field-title">Красный</label>
+                <label for="color-red" class="filter-form__field-title">
+                  <span class="filter-form__custom-checkbox"></span>
+                  Красный
+                </label>
               </p>
 
               <p class="filter-form__field">
                 <input type="checkbox" name="color-pink" id="color-pink" class="filter-form__field-checkbox visually-hidden">
-                <label for="color-pink" class="filter-form__field-title">Розовый</label>
+                <label for="color-pink" class="filter-form__field-title">
+                  <span class="filter-form__custom-checkbox"></span>
+                  Розовый
+                </label>
               </p>
             </fieldset>
 
@@ -280,9 +294,16 @@
         <div class="sort__content">
           <ul class="sort__list">
             <li class="sort__item product">
-              <p class="product__img">
-                <img src="/img/content/item-1.jpg" alt="Селфи-палка">
-              </p>
+              <div class="product__header">
+                <p class="product__img">
+                  <img src="/img/content/item-1.jpg" alt="Селфи-палка">
+                </p>
+
+                <div class="product-popup">
+                  <a href="#" class="product-popup__link product-popup__link--cart btn">В корзину</a>
+                  <a href="#" class="product-popup__link product-popup__link--compare">Добавить к сравнению</a>
+                </div>
+              </div>
 
               <div class="product__descr">
                 <h4 class="product__title">
@@ -290,17 +311,19 @@
                 </h4>
                 <p class="product__price">500 руб.</p>
               </div>
-
-              <div class="product-popup">
-                <a href="#" class="product-popup__link product-popup__link--cart">В корзину</a>
-                <a href="#" class="product-popup__link product-popup__link--compare">Добавить к сравнению</a>
-              </div>
             </li>
 
             <li class="sort__item product">
-              <p class="product__img">
-                <img src="/img/content/item-2.jpg" alt="Селфи-палка">
-              </p>
+              <div class="product__header">
+                <p class="product__img">
+                  <img src="/img/content/item-2.jpg" alt="Селфи-палка">
+                </p>
+
+                <div class="product-popup">
+                  <a href="#" class="product-popup__link product-popup__link--cart btn">В корзину</a>
+                  <a href="#" class="product-popup__link product-popup__link--compare">Добавить к сравнению</a>
+                </div>
+              </div>
 
               <div class="product__descr">
                 <h4 class="product__title">
@@ -309,16 +332,19 @@
                 <p class="product__price">1 500 руб.</p>
               </div>
 
-              <div class="product-popup">
-                <a href="#" class="product-popup__link product-popup__link--cart">В корзину</a>
-                <a href="#" class="product-popup__link product-popup__link--compare">Добавить к сравнению</a>
-              </div>
             </li>
 
             <li class="sort__item product">
-              <p class="product__img">
-                <img src="/img/content/item-3.jpg" alt="Селфи-палка">
-              </p>
+              <div class="product__header">
+                <p class="product__img">
+                  <img src="/img/content/item-3.jpg" alt="Селфи-палка">
+                </p>
+
+                <div class="product-popup">
+                  <a href="#" class="product-popup__link product-popup__link--cart btn">В корзину</a>
+                  <a href="#" class="product-popup__link product-popup__link--compare">Добавить к сравнению</a>
+                </div>
+              </div>
 
               <div class="product__descr">
                 <h4 class="product__title">
@@ -327,16 +353,19 @@
                 <p class="product__price">2 500 руб.</p>
               </div>
 
-              <div class="product-popup">
-                <a href="#" class="product-popup__link product-popup__link--cart">В корзину</a>
-                <a href="#" class="product-popup__link product-popup__link--compare">Добавить к сравнению</a>
-              </div>
             </li>
 
-            <li class="sort__item product">
-              <p class="product__img">
-                <img src="/img/content/item-4.jpg" alt="Селфи-палка">
-              </p>
+            <li class="sort__item product product--new">
+              <div class="product__header">
+                <p class="product__img">
+                  <img src="/img/content/item-4.jpg" alt="Селфи-палка">
+                </p>
+
+                <div class="product-popup">
+                  <a href="#" class="product-popup__link product-popup__link--cart btn">В корзину</a>
+                  <a href="#" class="product-popup__link product-popup__link--compare">Добавить к сравнению</a>
+                </div>
+              </div>
 
               <div class="product__descr">
                 <h4 class="product__title">
@@ -345,10 +374,6 @@
                 <p class="product__price">4 900 руб.</p>
               </div>
 
-              <div class="product-popup">
-                <a href="#" class="product-popup__link product-popup__link--cart">В корзину</a>
-                <a href="#" class="product-popup__link product-popup__link--compare">Добавить к сравнению</a>
-              </div>
             </li>
           </ul>
         </div>
